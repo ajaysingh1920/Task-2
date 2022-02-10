@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 40%;
+    }
+
+    .head {
+        display: flex;
+        width: 1000px;
+        margin: auto;
+        /* background-color: white; */
+        font-size: small;
+    }
+
+    .head1 {
+        width: 710px;
+    }
+
+    .head2 {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.425);
+        color: white;
+    }
+
+    .head2 p {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .head2 div {
+        height: 10px;
+        width: 1px;
+        background-color: white;
+        position: relative;
+        top: 7px;
+    }
+
+    .services {
+        /* border: 2px solid red; */
+        height: 700px;
+        width: 1000px;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: rgb(2 12 31 / 82%);
+        height: 50px;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px;
+        margin: 5px;
+        font-size: medium;
+        color: rgba(151, 213, 255, 0.85);
+        cursor: pointer;
+        /* border: 1px solid white; */
+        border-radius: 2px;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(65, 153, 194);
+    }
+
+    .navbar hr {
+        display: inline-block;
+        height: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .image img {
+        display: inline-block;
+        position: relative;
+        top: -95px;
+        left: 10px;
+        width: fit-content;
+        height: 150px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        list-style: none;
+        color: rgba(151, 213, 255, 0.85);
+    }
+
+    .middle {
+        background-color: rgba(59, 58, 58, 0.432);
+        color: white;
+        z-index: -1;
+        position: relative;
+        top: -154px;
+        height: 160px;
+    }
+
+    .middle p {
+        position: relative;
+        top: 30px;
+        font-size: 40px;
+        left: 25px;
+    }
+
+    .box {
+        width: 1000px;
+        height: 480px;
+        background-color: rgb(2 12 31 / 82%);
+        color: white;
+        position: relative;
+        top: -154px;
+    }
+
+    .box .innerbox {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: aqua; */
+    }
+    .line1{
+        width: 1px;
+        height: 475px;
+        background-color: white;
+        position: relative;
+        left: 3px;
+        opacity: .1;
+    }
+    .line2{
+        position: relative;
+        right: 3px;
+        width: 1px;
+        height: 475px;
+        background-color:white;
+        opacity: .1;
+    }
+    .innerboxes{
+        width: 950px;
+        height: 400px;
+        /* background-color: black; */
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 18px;
+    }
+    .innerboxes .innerbox1{
+       width: 300px;
+       height: 420px;
+       /* border: 1px solid tomato; */
+    }
+    .innerboxes .innerbox2{
+        width: 300px;
+       height: 420px;
+       /* border: 1px solid tomato; */
+    }
+    .innerboxes .innerbox3{
+        width: 300px;
+       height: 420px;
+       /* border: 1px solid tomato; */
+    }
+    .innerbox1 img{
+        width: 300px;
+        filter: brightness(190%);
+    }
+    .innerbox2 img{
+        width:300px;
+    }
+    .innerbox3 img{
+        width: 300px;
+    }
+    .innerbox1 a{
+        color: white;
+    }
+    .innerbox2 a{
+        color: white;     
+    }
+    .innerbox3 a{
+        color: white;
+    }
+    .line3{
+        width: 992px;
+        height:1px;
+        background-color: white;
+        opacity: .2;
+        position: relative;
+        top: -1px;
+        left: 4px;
+    }
+
+    .footbar{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.301);
+        justify-content: center;
+        position: relative;
+        top: -135px;
+
+    }
+    .footbar p{
+        padding: 5px;
+        color: white;
+    }
+    .footbar a{
+        display: inline-block;
+        padding: 5px;
+        color: white;
+    }
+    .footbar hr{
+        height: 15px;
+        position: relative;
+        top: 5px;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <div class="head1">
+
+        </div>
+        <div class="head2">
+            <p>Request a Quote</p>
+            <div></div>
+            <p>client login</p>
+            <div></div>
+            <p>Vehicle Export Portal</p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="navbar">
+            <li>HOME</li>
+            <hr>
+            <li>ABOUT FTZWS</li>
+            <hr>
+            <li><a href="Services.html">OUR SERVICES</a></li>
+            <hr>
+            <li>OUR CLIENTS</li>
+            <hr>
+            <li>CONTACT US</li>
+        </div>
+        <div class="image">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="middle">
+            <p>BRINGING TECHNOLOGY</p>
+            <P>AND OPERATIONAL EXCELLENCE.</P>
+        </div>
+
+        <div class="box">
+            <div class="innerbox">
+                <div class="line1"></div>
+                <div class="innerboxes">
+                    <div class="innerbox1">
+                        <img src="tile1.png" alt="">
+                        <p>
+                            Imagine an international gateway where goods and merchandise flow across borders.where countries lower
+                            taxes,reduce
+                            tape,and eliminate road blocks.Where company import goods and merchandise directly into a free trade
+                            zone - and ship products out duty free.
+                        </p>
+                        <br>
+                        <p>The miami trade zone connects North America,Europe and Asia to Latin America and the carribean via direct
+                            air and sea transportaion
+                            links.plus rail and expressway.Operated by FTZ world services.the 47-acre zone(#372) saves comapany
+                            money and time.
+                        </p>
+                        <br>
+                        <a href="">More about free trade and zones ></a>
+                    </div>
+                    <div class="innerbox2">
+                        <img src="tile2.png" alt="">
+                        <p>
+                            Imagine an international gateway where goods and merchandise flow across borders.where countries lower
+                            taxes,reduce
+                            tape,and eliminate road blocks.Where company import goods and merchandise directly into a free trade
+                            zone - and ship products out duty free.
+                        </p>
+                        <br>
+                        <p>The miami trade zone connects North America,Europe and Asia to Latin America and the carribean via direct
+                            air and sea transportaion
+                            links.plus rail and expressway.Operated by FTZ world services.the 47-acre zone(#372) saves comapany
+                            money and time.
+                        </p>
+                        <br>
+                        <a href="">More about free trade and zones ></a>
+                    </div>
+                    <div class="innerbox3">
+                        <img src="tile3.png" alt="">
+                        <p>
+                            Imagine an international gateway where goods and merchandise flow across borders.where countries lower
+                            taxes,reduce
+                            tape,and eliminate road blocks.Where company import goods and merchandise directly into a free trade
+                            zone - and ship products out duty free.
+                        </p>
+                        <br>
+                        <p>The miami trade zone connects North America,Europe and Asia to Latin America and the carribean via direct
+                            air and sea transportaion
+                            links.plus rail and expressway.Operated by FTZ world services.the 47-acre zone(#372) saves comapany
+                            money and time.
+                        </p>
+                        <br>
+                        <a href="">More about free trade and zones ></a>
+                    </div>
+                </div>
+                <div class="line2"></div>
+            </div>
+            <div class="line3"></div>
+        </div>
+        <div class="footbar">
+            <p>copyright © 2010 FTZ world services.All rights reserved.</p>
+            <a href="">contact us</a>
+            <hr>
+            <a href="">Request a quoted</a>
+        </div>
+    </div>
+</body>
+
+</html>
