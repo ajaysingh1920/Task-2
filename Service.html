@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Trebuchet MS;
+    }
+
+    body {
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /* height: 40%; */
+    }
+
+    .head {
+        /* display: flex; */
+        /* background-color: white; */
+        width: 900px;
+        margin: auto;
+
+    }
+
+    .head .head2 {
+        display: flex;
+        justify-content: right;
+        background-color: rgba(0, 0, 0, 0.425);
+        color: white;
+        position: relative;
+        left: 577px;
+        width: 323px;
+        font-size: small;
+    }
+
+    .head .head2 p {
+        cursor: pointer;
+        padding: 5px;
+        font-size: small;
+        font-weight: lighter;
+    }
+
+    .head .head2 div {
+        height: 10px;
+        width: 1px;
+        background-color: white;
+        position: relative;
+        top: 8px;
+    }
+
+    .services {
+        /* border: 2px solid red; */
+        height: 643px;
+        width: 900px;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .navbar {
+        background-color: rgb(2 12 31 / 82%);
+        height: 64px;
+    }
+
+    .border {
+        margin: 2px;
+        border: .3px solid rgba(255, 255, 255, 0.185);
+        height: 58px;
+        position: relative;
+        top: 2px;
+    }
+
+    .navbar .border .inner {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+       
+        height: 50px;
+        width: 850px;
+        margin: 4px auto;
+    }
+
+    .inner li {
+        list-style: none;
+        display: inline-block;
+        padding: 6px 15px;
+        margin: 0px;
+        color: #9DCCE9;
+        cursor: pointer;
+       
+        border-radius: 2px;
+        font-size: 17px;
+
+    }
+
+    .inner .liservices {
+        background-color: rgb(60 101 119 / 86%);
+        color: white;
+        border-radius: 4px;
+    }
+
+    .inner div {
+        height: 15px;
+        background-color: white;
+        width: .8px;
+    }
+
+    .image img {
+        display: inline-block;
+        position: relative;
+        top: -105px;
+        left: 7px;
+        width: fit-content;
+        height: 160px;
+    }
+
+    .box {
+        
+        height: 545px;
+        width: 900px;
+        position: relative;
+        top: -115px;
+        background-color: rgb(3 10 22 / 85%);
+    }
+
+    .box .innerbox {
+        width: 900px;
+        height: 450px;
+        display: flex;
+        
+    }
+
+    .innerbox .line1 {
+        width: 1px;
+        height: 541px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 248, 248, 0.527));
+        opacity: .3;
+        position: relative;
+        left: 2px;
+
+    }
+
+    .innerbox .innerbox1 {
+        width: 240px;
+        height: 360px;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        left: 20px;
+        top: 5px;
+    }
+
+    .innerbox1 img {
+        width: 240px;
+    }
+
+    .innerbox1 .line {
+        height: 1px;
+        background-color: white;
+        opacity: .2;
+    }
+
+    .innerbox1 .inner a {
+        display: block;
+        color: #d1fdffa1;
+        font-weight: lighter;
+    }
+
+    .innerbox .innerbox2 {
+        width: 585px;
+        height: 450px;
+        
+        position: relative;
+        left: 50px;
+        top: 19px;
+        color: white;
+    }
+
+    .innerbox2 h2 {
+        margin-bottom: 10px;
+    }
+
+    .innerbox2 .list {
+        
+        margin-left: 15px;
+    }
+
+    .innerbox2 a {
+        color: #b9dee8d4;
+    }
+
+    .innerbox2 h2 {
+        font-size: 20px;
+        color: #C4E2FF;
+        font-weight: 400;
+    }
+
+    .innerbox2 .innerbox21 {
+        background-color: #02172a;
+        height: 100px;
+    }
+
+    .innerbox21 div {
+        width: 575px;
+        height: 1.5px;
+        background-color: rgba(255, 255, 255, 0.589);
+        opacity: .3;
+    }
+
+    .innerbox21 p {
+        position: relative;
+        left: 20px;
+        top: -4px;
+        
+    }
+
+    .innerbox21 .bottom {
+        position: relative;
+        top: 37px;
+    }
+
+    .innerbox21 button {
+        position: relative;
+        left: 20px;
+        top: 5px;
+        padding: 7px;
+        background-image: linear-gradient(to bottom, rgb(0 89 131 / 95%), rgb(1 17 21 / 94%));
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 100px;
+    }
+
+    .innerbox2 .para{
+        width: 565px;
+        height: fit-content;
+        
+    }
+    .innerbox .line2 {
+        width: 1px;
+        height: 541px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 248, 248, 0.527));
+        opacity: .3;
+        position: relative;
+        left: 70px;
+    }
+
+    .line3 {
+        width: 894px;
+        height: 1px;
+        position: relative;
+        top: 91px;
+        background-color: white;
+        opacity: .3;
+        left: 3px;
+    }
+    .footbar {
+        display: flex;
+        color: white;
+        background-color:rgb(2 21 43 / 50%);
+        justify-content: center;
+        position: relative;
+        top: -98px;
+        padding: 6px;
+    }
+    .footbar p {
+        margin-right: 5px;
+    }
+
+    .footbar a {
+        color: white;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: -2px;
+    }
+    .footbar div{
+        background-color: white;
+        position: relative;
+        top: 3px;
+        height: 13px;
+        width: 1px;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <div class="head1">
+        </div>
+        <div class="head2">
+            <p>Request a Quote</p>
+            <div></div>
+            <p>client login</p>
+            <div></div>
+            <p>Vehicle Export Portal</p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="navbar">
+            <div class="border">
+                <div class="inner">
+                    <li>HOME</li>
+                    <div></div>
+                    <li>ABOUT FTZWS</li>
+                    <div></div>
+                    <li class="liservices">OUR SERVICES</li>
+                    <div></div>
+                    <li>OUR CLIENTS</li>
+                    <div></div>
+                    <li>CONTACT US</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="box">
+            <div class="innerbox">
+                <div class="line1"></div>
+                <div class="innerbox1">
+                    <img src="casestudies_industries-column1.jpg" alt="">
+                    <img src="casestudies_industries-column2.jpg" alt="">
+                    <div class="line"></div>
+                    <div class="inner">
+                        <a href="">Technology Services</a>
+                        <a href="">Public Warehousing</a>
+                        <a href="">Yard Storage</a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="innerbox2">
+                    <h2>OUR SERVICES</h2>
+                    <div class="para">
+                        <p>Our highly trained and exprienced staff can handle even the most complex distribution needs.
+                            we've designed the package of benefits that work together to streamline your experience in
+                            the
+                            Miami Free Trade zone
+                            .Tell us what you need ans we'll provide it.our primary services are <a href="">Technology
+                                Services</a>
+                            ,<a href="">Public Warehousing</a> and <a href="">Yard Storage</a>.
+                        </p>
+                        <br>
+                        <p>The Zone's unparalled structure includes Power,communication System,fiber optics,security and
+                            easy access to land,
+                            rail, sea and air transportation. Out client can tap into more than 850,000 square feet of
+                            mixed-use office,showroom
+                            and warehouse facilities in the zone,including:
+                        </p>
+                        <br>
+                        <div class="list">
+                            <p>• Two public warehouses with 33,000 feet each.</p>
+                            <p>• Exhibition space in two showroom malls,each containing apporimately 75,000 square feet.
+                            </p>
+                            <p>• A commercial building adjacent to the warehouse with offices and other spaces.</p>
+                            <p>• The office of the U.S. Customs & Border Patol,along with several ajencies integration
+                                to
+                                trade facilation and compilance.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="innerbox21">
+                        <div></div>
+                        <br>
+                        <p>Want to see how FTZ World Services can help you?</p>
+                        <button>Request Someone to contact you ></button>
+                        <br>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+                <div class="line2"></div>
+            </div>
+            <div class="line3"></div>
+        </div>
+        <div class="footbar">
+            <p>copyright © 2010 FTZ world services.All rights reserved.</p>
+            <a href="">contact us</a>
+            <div></div>
+            <a href="">Request a quote</a>
+        </div>
+    </div>
+</body>
+
+</html>
